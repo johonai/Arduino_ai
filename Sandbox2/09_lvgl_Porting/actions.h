@@ -7,9 +7,6 @@
 extern "C" {
 #endif
 
-extern void action_inc_bar(lv_event_t * e);
-extern void action_decbar(lv_event_t * e);
-extern void action_dec_bar(lv_event_t * e);
 
 
 #ifdef __cplusplus
