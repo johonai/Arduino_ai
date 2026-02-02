@@ -6,12 +6,12 @@
 #include <Arduino.h>
 #include <esp_display_panel.hpp>
 #include <lvgl.h>
-#include "lvgl_v8_port.h"
+#include <ui/lvgl_v8_port.h>
 
 // Extern "C" Block für die Zusammenarbeit von C (EEZ) und C++ (Arduino)
 //extern "C" {
-    #include "ui.h"
-    #include "vars.h"
+    #include <ui/ui.h>
+    #include <ui/vars.h>
     // Falls EEZ Studio zusätzliche Flow-Dateien exportiert hat:
     // #include "actions.h" 
 //}
