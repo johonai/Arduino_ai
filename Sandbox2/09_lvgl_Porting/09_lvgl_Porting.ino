@@ -1,6 +1,6 @@
 // Version 1.2.0 - EEZ Flow Integration & Thread Safety
 #define LV_LVGL_H_INCLUDE_SIMPLE
-#define EEZ_FOR_LVGL
+#define EEZ_FOR_LVGL 1
 
 #include <eez-framework.h>
 #include <Arduino.h>
@@ -9,12 +9,12 @@
 #include "lvgl_v8_port.h"
 
 // Extern "C" Block für die Zusammenarbeit von C (EEZ) und C++ (Arduino)
-extern "C" {
+//extern "C" {
     #include "ui.h"
     #include "vars.h"
     // Falls EEZ Studio zusätzliche Flow-Dateien exportiert hat:
     // #include "actions.h" 
-}
+//}
 
 using namespace esp_panel::drivers;
 using namespace esp_panel::board;
