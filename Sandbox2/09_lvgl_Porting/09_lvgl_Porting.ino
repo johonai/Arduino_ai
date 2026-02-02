@@ -1,4 +1,8 @@
 // Version 1.2.0 - EEZ Flow Integration & Thread Safety
+#define LV_LVGL_H_INCLUDE_SIMPLE
+#define EEZ_FOR_LVGL
+
+#include <eez-framework.h>
 #include <Arduino.h>
 #include <esp_display_panel.hpp>
 #include <lvgl.h>
@@ -14,6 +18,18 @@ extern "C" {
 
 using namespace esp_panel::drivers;
 using namespace esp_panel::board;
+
+#define native_var_t unit32_t 
+int32_t nativ_val;
+
+int32_t get_var_nativ_val() {
+    return nativ_val;
+}
+
+void set_var_nativ_val(int32_t value) {
+    nativ_val = value;
+}
+
 
 void setup() {
     Serial.begin(115200);

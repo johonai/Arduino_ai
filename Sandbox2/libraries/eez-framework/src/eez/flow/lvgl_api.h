@@ -28,7 +28,7 @@
         #endif
     #endif
 #else
-    #include "lvgl/lvgl.h"
+    #include "lvgl.h"
     #if LVGL_VERSION_MAJOR > 9 || (LVGL_VERSION_MAJOR == 9 && LVGL_VERSION_MINOR > 1)
         #include "lvgl/src/lvgl_private.h"
     #endif
