@@ -20,6 +20,10 @@ enum FlowGlobalVariables {
 
 // Native global variables
 
+extern int32_t get_var_counter();
+extern void set_var_counter(int32_t value);
+extern float get_var_bar();
+extern void set_var_bar(float value);
 
 
 #ifdef __cplusplus
